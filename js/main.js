@@ -11,8 +11,12 @@ while (numbers.length < 5) {
     let numeriInPagina = document.querySelector("h1");
     if (!numbers.includes(numeroSingolo)) {
         numbers.push(numeroSingolo);
-        console.log(numeroSingolo);
 
         numeriInPagina.append(numeroSingolo + ",");
     }
+    // Impostate un timer a 3 secondi, testatelo con un console.log. Una volta funzionante fate in modo che nasconda i numeri in pagina.
+    
+    setTimeout (function(){
+        console.log(numeroSingolo);
+    }, 1000 * 3);
 }
